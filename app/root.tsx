@@ -48,6 +48,7 @@ export default function App() {
     );
   
   useEffect(() => {
+    // useLoaderDataの返り値qが変更されるのをイベントに検索ボックスの値も変わる
     const searchField = document.getElementById("q");
     if (searchField instanceof HTMLInputElement) {
       searchField.value = q || "";
