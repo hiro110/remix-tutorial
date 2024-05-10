@@ -15,6 +15,7 @@ export const action = async ({
   await updateContact(params.contactId, updates);
   return redirect(`/contacts/${params.contactId}`);
 };
+
 export const loader = async ({
   params,
 }: LoaderFunctionArgs) => {
